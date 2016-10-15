@@ -1,5 +1,11 @@
 class Stock < ActiveRecord::Base
 
+  #Create many to many association between stoks and users
+  has_many :user_stocks
+  has_many :users, through: :user_stocks
+
+  
+
   #Create a method that goes to db and looks if the stock exists?
   def self.find_by_ticker(ticker_symbol)
     where(ticker: ticker_symbol).first
