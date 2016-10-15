@@ -6,6 +6,8 @@ class User < ActiveRecord::Base
 
   has_many :user_stocks
   has_many :stocks, through: :user_stocks
+  has_many :fridships
+  has_many :friends, through: :friendships
 
   def full_name
     return "#{f_name} #{l_name}".strip if (f_name || l_name)
