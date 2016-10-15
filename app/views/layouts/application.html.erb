@@ -50,7 +50,8 @@
           <ul class="nav navbar-nav">
             <li><%= link_to "Link1", "/path1"  %></li>
             <li><%= link_to "My Portfolio", my_portfolio_path %></li>
-            <li><%= link_to "Profile", edit_user_registration_path %></li>
+            <i class="fa fa-user"></i>
+            <li><%= link_to current_user.full_name ? current_user.full_name : "Anonymous", edit_user_registration_path(current_user) %></li>
             <li><%= link_to "Sign In", new_user_session_path if !current_user %></li>
             <li><%= link_to("Logout",destroy_user_session_path, method: :delete) if current_user %></li>
           </ul>
