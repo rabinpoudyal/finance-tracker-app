@@ -1,28 +1,8 @@
-== README
+This web app is built upon Ruby On Rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby version => 2.3.1
+Rails version => 2.4.6
 
-Things you may want to cover:
+Users can sign up to the app. They can search for the stock, track it and add to their specific portfolio. There is also the friendship model that allows users to add friend each other. They can view what stocks their friend are tracking.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Live preview of the app can be seen here => <a href="stock-tracker-rabin.herokuapp.com">Stock tracker</a>
